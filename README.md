@@ -1,3 +1,6 @@
+# This is fork version to migrating to null-safety version
+[Original Repo](https://github.com/andiksetyawan/fake_gps_detector)
+
 # Fake GPS Detector, Emulator Device Detector
 
 A Flutter plugin for detecting the emulator device and mock location / fake gps.
@@ -10,14 +13,14 @@ In your flutter project add the dependency:
 ```yml
 dependencies:
   ...
-  fake_gps_detector: ^0.5.0
+  anti_mock_gps: ^1.0.0
 ```
 
 
 ## Usage
 #### Importing package
 ```
-import 'package:fake_gps_detector/fake_gps_detector.dart';
+import 'package:anti_mock_gps/anti_mock_gps.dart';
 ```
 
 Permission src/main/AndroidManifest.xml

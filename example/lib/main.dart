@@ -11,8 +11,10 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
-  _MyAppState createState() => _MyAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
@@ -27,8 +29,8 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    bool isMock;
-    bool isEmulator;
+    bool? isMock;
+    bool? isEmulator;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       if (await Permission.location.request().isGranted) {
